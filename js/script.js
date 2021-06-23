@@ -21,8 +21,8 @@ const app = new Vue({
         addInputInList(){
             if(!this.inputToBo == ''){
                 this.toBoStart.push(this.inputToBo);
+                this.inputToBo = " ";
             }
-            this.inputToBo = " ";
         },
 
         removeElementList(index){
