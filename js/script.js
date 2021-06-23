@@ -23,6 +23,8 @@ const app = new Vue({
                 this.toBoStart.push(this.inputToBo);
                 this.inputToBo = " ";
             }
+            this.inputToBo = " ";
+            
         },
 
         removeElementList(index){
