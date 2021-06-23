@@ -45,7 +45,8 @@ body{
 .list{
     height: 500px;
     width: 600px;
-    background-color: red;
+    background-image: url(../img/paper.jpg);
+    box-shadow: 3px 3px 5px black;
     position: absolute;
     top: 350px;
     left: 41%;
@@ -54,7 +55,7 @@ body{
 .puntina{
     height: 40px;
     width: 40px;
-    background-color: aquamarine;
+    background-color: #6b3105;
     box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
     border-radius: 50%;
     position: absolute;
@@ -63,6 +64,7 @@ body{
 }
 
 .list_container{
+    width: 600px;
     padding: 50px 20px;
     font-family: 'Dancing Script', cursive;
     position: absolute;
@@ -74,5 +76,19 @@ body{
 }
 
 .list_container ul li{
+    display: flex;
+    justify-content: space-between;
     font-size: 30px;
+    border-bottom: 1px solid grey;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.list_container ul li i{
+    font-size: 15px;
+    align-self: center;
+}
+
+.list_container li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
 }
