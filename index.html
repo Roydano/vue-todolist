@@ -28,24 +28,25 @@
         <div class="top_nav">
             <h1>To Bo List</h1>
             <div class="input_bar">
-                <input type="text" placeholder="Inserisci il tuo To Bo">
-                <button>Inserisci</button>
+                <input type="text" placeholder="Inserisci il tuo To Bo" v-model="inputToBo" @keyup.enter="addInputInList">
+                <button @click="addInputInList">Inserisci</button>
             </div>
         </div>
 
         
         <div class="list">
             <div class="puntina"></div>
-            <div class="list_container">
+            <div v-if="toBoStart.length > 0" class="list_container">
                 <ul>
                     <li v-for="item in toBoStart">
                         {{item}}
 
-
-                        <i class="fas fa-times"></i>
+                        <i @click="removeElementList" class="fas fa-times"></i>
                     </li>
                 </ul>
             </div>
+
+            <h2 v-else>La tua lista è vuota</h2>
         </div>
         
 
