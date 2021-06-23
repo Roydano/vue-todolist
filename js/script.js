@@ -5,7 +5,7 @@ const app = new Vue({
 
     data: {
 
-        inputToBo: '',
+        inputToBo: "",
 
         toBoStart: [
             'Fare la spesa',
@@ -19,11 +19,11 @@ const app = new Vue({
     methods: {
 
         addInputInList(){
-            if(!this.inputToBo == ''){
+            if(this.inputToBo != ""){
                 this.toBoStart.push(this.inputToBo);
-                this.inputToBo = " ";
+                this.inputToBo = "";
             }
-            this.inputToBo = " ";
+            this.inputToBo = "";
             
         },
 
