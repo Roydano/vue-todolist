@@ -1,0 +1,78 @@
+/* COMMON */
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+
+body{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+}
+
+
+.container{
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+
+.top_nav{
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+    top: 200px;
+    left: 55%;
+}
+
+.top_nav h1{
+    font-size: 60px;
+}
+
+.input_bar input,
+.input_bar button{
+    margin: 10px 20px 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.list{
+    height: 500px;
+    width: 600px;
+    background-color: red;
+    position: absolute;
+    top: 350px;
+    left: 41%;
+}
+
+.puntina{
+    height: 40px;
+    width: 40px;
+    background-color: aquamarine;
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    left: 270px;
+    top: -20px;
+}
+
+.list_container{
+    padding: 50px 20px;
+    font-family: 'Dancing Script', cursive;
+    position: absolute;
+
+}
+
+.list_container ul{
+    list-style: none;
+}
+
+.list_container ul li{
+    font-size: 30px;
+}
